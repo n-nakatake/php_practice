@@ -2,33 +2,33 @@
 
 //1　引数の2倍の値を返す
 function twice($num){
-    $result = $num*2;
+    $result = $num * 2;
     return $result;
 }
-echo twice(100). "\n";
+echo twice(100) . "\n";
 
 //2 仮引数a+bの値を返す
 function add($a, $b){
-    $result =$a+ $b;
-    return  $result;
+    $result = $a + $b;
+    return $result;
 }
-echo add(20, 30). "\n";
+echo add(20, 30) . "\n";
 
 //3　仮引数全ての値をかけた値を返す
-$array = array(1,3,5,7,9);
-function all_mul($array){
+$array = array(1, 3, 5, 7, 9);
+function allMul($array){
     $result = $array[0];
     
     for( $i = 1 ; $i < count($array); $i++){
-     $result *= $array[$i];
+        $result *= $array[$i];
     }
     return $result;
 }
-echo all_mul($array). "\n";
+echo allMul($array) . "\n";
 
 
 //4 配列の中で一番大きい数字を返す
-function max_array($arr){
+function maxArray($arr){
     // とりあえず配列の最初の要素を一番大きい値とする
     $max_number = $arr[0];
     foreach($arr as $a){
@@ -40,7 +40,7 @@ function max_array($arr){
 }
 
 $numbers = [1000, 780, 5, 1058, 23, 2, 8, 10, 608, 7];
-echo max_array($numbers). "\n";
+echo maxArray($numbers) . "\n";
 
 //5 ビルトイン関数
 //-----strip_tags-----
